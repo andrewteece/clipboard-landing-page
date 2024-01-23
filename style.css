@@ -1,0 +1,60 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/* CSS CUSTOM PROPERTIES */
+
+:root {
+  --ff-primary: 'Bai Jamjuree', sans-serif;
+
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.5rem;
+  --fs-xlg: 1.75rem;
+  --fs-xxlg: 2.25rem;
+  --fs-xxxlg: 2.875rem;
+
+  --fw-normal: 400;
+  --fw-bold: 600;
+
+  --clr-primary-400: hsl(171, 66%, 44%);
+  --clr-primary-600: hsl(233, 100%, 69%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-400: hsl(201, 11%, 66%);
+  --clr-neutral-500: hsl(210, 10%, 33%);
+}
+
+/* CSS RESET */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-wrap: balance;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+/* BODY STYLES */
