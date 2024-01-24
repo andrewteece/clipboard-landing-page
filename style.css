@@ -80,7 +80,7 @@ h3 {
   color: var(--clr-neutral-500);
   font-weight: var(--fw-bold);
   text-align: center;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 h1 {
@@ -126,8 +126,16 @@ header {
 /* LAYOUT STYLES */
 
 .wrapper {
-  max-width: 23.75rem;
-  padding: 0 1.5rem;
+  min-width: 23.75rem;
+  padding: 0 2rem;
+}
+
+.section--title {
+  margin-bottom: 1.5rem;
+}
+
+.section--subtitle {
+  margin-bottom: 1rem;
 }
 
 /* UTILITY CLASSES */
@@ -136,14 +144,24 @@ header {
   margin-top: 2rem;
 }
 
-.margin--spacer {
-  margin-top: 2rem;
+.spacer {
+  margin-top: 2.5rem;
+}
+
+.spacer-md {
+  margin-top: 5rem;
+}
+
+.spacer-lg {
+  margin-top: 7rem;
 }
 
 .flex {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* COMPONENT STYLES */
@@ -162,7 +180,23 @@ header {
   box-shadow: 0px 10px 20px 0px hsla(171, 66%, 44%, 0.5);
 }
 
+.btn--accent1:hover,
+.btn--accent1:focus {
+  background: hsla(171, 66%, 44%, 0.7);
+  outline: 1px solid var(--clr-neutral-100);
+  transition: all 400ms ease-in-out;
+}
+
 .btn--accent2 {
   background: var(--clr-primary-600);
   box-shadow: 0px 10px 20px 0px hsla(233, 100%, 69%, 0.5);
+  transition: all 400ms ease-in-out;
 }
+
+.btn--accent2:hover,
+.btn--accent2:focus {
+  background: hsla(233, 100%, 69%, 0.7);
+  outline: 1px solid var(--clr-neutral-100);
+}
+
+/* FOOTER STYLES */
