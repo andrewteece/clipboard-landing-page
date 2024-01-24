@@ -22,7 +22,9 @@
   --clr-primary-600: hsl(233, 100%, 69%);
 
   --clr-neutral-100: hsl(0, 0%, 100%);
-  --clr-neutral-400: hsl(201, 11%, 66%);
+  --clr-neutral-300: hsla(201, 11%, 66%, 0.1);
+
+  --clr-neutral-400: hsla(201, 11%, 66%);
   --clr-neutral-500: hsl(210, 10%, 33%);
 }
 
@@ -164,6 +166,13 @@ header {
   gap: 2rem;
 }
 
+.flex-social {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
 /* COMPONENT STYLES */
 
 .btn {
@@ -200,3 +209,22 @@ header {
 }
 
 /* FOOTER STYLES */
+
+footer {
+  background-color: var(--clr-neutral-300);
+}
+
+footer a {
+  color: var(--clr-neutral-500);
+}
+
+footer a:hover,
+footer a:focus {
+  border-bottom: 2px solid var(--clr-neutral-500);
+  transition: all 250ms ease-in-out;
+}
+
+.footer--img {
+  max-width: 3.4375rem;
+  max-height: 3.4375rem;
+}
