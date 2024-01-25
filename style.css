@@ -113,7 +113,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(./images/bg-header-mobile.png);
+  background-image: url(./images/bg-header-desktop.png);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -214,11 +214,13 @@ header {
 /* FOOTER STYLES */
 
 footer {
+  width: 100%;
   background-color: var(--clr-neutral-300);
 }
 
 footer a {
   color: var(--clr-neutral-500);
+  font-size: var(--fs-md);
 }
 
 footer a:hover,
@@ -231,4 +233,13 @@ footer a:focus {
 .footer--img {
   max-width: 3.4375rem;
   max-height: 3.4375rem;
+}
+
+.footer--social svg {
+  cursor: pointer;
+}
+
+.footer--social svg:hover path {
+  fill: var(--clr-primary-400);
+  transition: all 350ms ease-in-out;
 }
