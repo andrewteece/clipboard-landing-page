@@ -7,13 +7,29 @@
 :root {
   --ff-primary: 'Bai Jamjuree', sans-serif;
 
-  --fs-base: 1rem;
+  /*--fs-base: 1rem;
   --fs-md: 1.125rem;
   --fs-lg: 1.5rem;
   --fs-xlg: 1.75rem;
   --fs-xxlg: 2rem;
   --fs-xxxlg: 2.25rem;
-  --fs-xxxxlg: 2.875rem;
+  --fs-xxxxlg: 2.875rem; */
+
+  --fs-base: clamp(1rem, 0.955rem + 0.189vi, 1.125rem); /* 16px -18px*/
+  --fs-md: clamp(1.2rem, 1.126rem + 0.311vi, 1.406rem); /* 19.2px - 22.5px*/
+  --fs-lg: clamp(1.44rem, 1.326rem + 0.48vi, 1.758rem); /* 23.04px - 28.125px*/
+  --fs-xlg: clamp(1.728rem, 1.56rem + 0.708vi, 2.197rem); /* 27.6px - 35.1px */
+  --fs-xxlg: clamp(
+    2.074rem,
+    1.832rem + 1.016vi,
+    2.747rem
+  ); /* 33.1px - 43.9 px*/
+  --fs-xxxlg: clamp(2.488rem, 2.15rem + 1.426vi, 3.433rem); /* 39.8px - 54.9px*/
+  --fs-xxxxlg: clamp(
+    2.986rem,
+    2.518rem + 1.971vi,
+    4.292rem
+  ); /* 47.7px - 68.6px */
 
   --fw-normal: 400;
   --fw-bold: 600;
@@ -67,11 +83,10 @@ a {
 /* BODY STYLES */
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
   font-family: var(--ff-primary);
+  font-size: var(--fs-base);
 }
 
 /* TYPOGRAPHY STYLES */
@@ -130,9 +145,14 @@ header {
 
 /* LAYOUT STYLES */
 
-.wrapper {
+/*.wrapper {
   min-width: 23.75rem;
   padding: 0 3rem;
+}*/
+
+.wrapper {
+  width: min(90rem, 100% - 1rem);
+  margin-inline: auto;
 }
 
 .section--title {
