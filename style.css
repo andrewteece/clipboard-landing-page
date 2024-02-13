@@ -168,6 +168,10 @@ header {
   margin-top: 2rem;
 }
 
+.text-align {
+  text-align: center;
+}
+
 .spacer {
   margin-top: 2.5rem;
 }
@@ -198,6 +202,20 @@ header {
 @media (min-width: 50rem) {
   .flex {
     flex-direction: row;
+    gap: 4rem;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .col + .col {
+    margin-left: 4em;
   }
 }
 
